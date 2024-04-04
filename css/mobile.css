@@ -1,0 +1,167 @@
+/* Header */
+.header-content .header {
+    padding: 0;
+    height: 60px;
+    display: flex;
+    width: 100%;
+    background-color: #ffffffb8;
+}
+
+.ColibriLogo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.desk{
+    display: none;
+}
+.mob{
+    display: block;
+    width: 50px;
+}
+
+.menu {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+.menu svg {
+    width: 17px;
+}
+
+.nav {
+    position: absolute;
+    top: 60px;
+    margin-left: 0;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.nav a {
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 0;
+    padding: 0 18px;
+    width: 100%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    border-top: solid 1px #f2f6ff;
+    box-sizing: border-box;
+}
+
+/* blob */
+.main-top{
+    height: 100vh;
+    overflow: hidden;
+}
+.video-blob{
+    width: 400%;
+    max-width: none;
+}
+.caption h1{
+    font-size: 38px;
+    color: #24cbff;
+    -webkit-text-stroke: unset;
+    -webkit-text-stroke-width: unset;
+}
+/* services */
+.block-def-2{
+    display: block;
+}
+.title h2{
+    width: 100%;
+    font-size: 32px;
+}
+.services{
+    display: block;
+}
+.service{
+    width: 100%;
+    margin-left: 0%;
+    padding: 0px 20px;
+}
+.item{
+    padding: 30px 30px;
+}
+.caption{
+    width: 100%;
+}
+.caption h3{
+    font-size: 19px;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.logo img{
+    max-height: 30px;
+    max-width: 30px;
+}
+.logo-max img{
+    max-width: 100%;
+}
+.disclosure{
+    margin-top: 10px;
+}
+.text{
+    margin-bottom: 12px;
+}
+/* Partners and our project */
+.partners{
+    width: 100%;
+    padding-left: 2%;
+    margin-top: 30px;
+}
+.partneritem{
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+.partneritem img{
+    max-height: 35px;
+    max-width: 120px;
+}
+.bottom-cont{
+    margin-top: 30px;
+}
+.contacts{
+    flex-direction: column;
+}
+.contactmargin{
+    margin-bottom: 10px;
+}
+/* Reviews */
+.reviews-carousel {
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-button-next {
+    margin-right: 830px;
+}
+/*Last*/
+
+.last-cont{
+    margin-bottom: 0px;
+}
+.bottom-cont{
+    margin-top: 30px;
+}
+.copy{
+    font-size: 16px;
+}
+.copy svg{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}

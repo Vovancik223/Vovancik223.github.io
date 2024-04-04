@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style=""><div id="in-page-channel-node-id" data-channel-name="in_page_channel_FoBQo-"></div><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <link rel="stylesheet" href="css/pc.css">
+    
+  video {
+    filter: -opera-shader(url(data:text/plain;base64,Ly8gaHR0cHM6Ly9naXRodWIuY29tL0dQVU9wZW4tRWZmZWN0cy9GaWRlbGl0eUZYLUNBUwovLyB2MwoKdW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwp1bmlmb3JtIGZsb2F0MiBpTW91c2U7CnVuaWZvcm0gZmxvYXQgaUFyZ3NbMV07Cgpjb25zdCBmbG9hdCBFUFNJT04gPSAwLjE7CmNvbnN0IGZsb2F0IFZfTUlOID0gMDsKY29uc3QgZmxvYXQgVl9MT1cgPSAwLjI1Owpjb25zdCBmbG9hdCBWX01FRCA9IDAuNTsKY29uc3QgZmxvYXQgVl9ISUdIID0gMC43NTsKY29uc3QgZmxvYXQgVl9NQVggPSAxOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmZsb2F0MyBwaXhlbChpbnQgeCwgaW50IHksIGZsb2F0MiB4eSkgewogICAgcmV0dXJuIGlDaHVuay5ldmFsKHh5ICsgZmxvYXQyKHgsIHkpKS5yZ2I7Cn0KCmZsb2F0MyBzaGFycGVuKGZsb2F0MiB4eSkgewogICAgZmxvYXQzIGYgPQogICAgICAgIHBpeGVsKC0xLCAtMSwgeHkpICogIDEgKwogICAgICAgIHBpeGVsKCAwLCAtMSwgeHkpICogLTEgKwogICAgICAgIHBpeGVsKCAxLCAtMSwgeHkpICogIDEgKwoKICAgICAgICBwaXhlbCgtMSwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMCwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMSwgMCwgeHkpICogLTEgICsKCiAgICAgICAgcGl4ZWwoLTEsIDEsIHh5KSAqIDEgICArCiAgICAgICAgcGl4ZWwoIDAsIDEsIHh5KSAqIC0xICArCiAgICAgICAgcGl4ZWwoIDEsIDEsIHh5KSAqIDE7CiAgICByZXR1cm4gZiAvIC0xOwp9CgpmbG9hdDQgUkdYMihmbG9hdDIgeHkpIHsKICAgIGZsb2F0NCBjb2xvciA9IGlDaHVuay5ldmFsKHh5KTsKCiAgICBpZiAoaUNodW5rU2l6ZS54ICogaUNodW5rU2l6ZS55IDwgTUlOX0FSRUEpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKGlDaHVua1NpemUueSA8IE1JTl9TVFJJUCB8fCBpQ2h1bmtTaXplLnggPCBNSU5fU1RSSVApIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKHh5LnggPCBNQVJHSU4gfHwgeHkueCA+IChpQ2h1bmtTaXplLnggLSBNQVJHSU4pIHx8CiAgICAgICAgeHkueSA8IE1BUkdJTiB8fCB4eS55ID4gKGlDaHVua1NpemUueSAtIE1BUkdJTikpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgcmV0dXJuIGZsb2F0NChzaGFycGVuKHh5KSwgMSk7Cn0KCmZsb2F0IG1pbjMoZmxvYXQgeCwgZmxvYXQgeSwgZmxvYXQgeikgewogICAgcmV0dXJuIG1pbih4LCBtaW4oeSwgeikpOwp9CgpmbG9hdCBtYXgzKGZsb2F0IHgsIGZsb2F0IHksIGZsb2F0IHopIHsKICAgIHJldHVybiBtYXgoeCwgbWF4KHksIHopKTsKfQoKZmxvYXQgcmNwKGZsb2F0IHYpIHsKICAgIHJldHVybiAxIC8gdjsKfQoKZmxvYXQzIFJHWDMoZmxvYXQyIHh5LCBmbG9hdCBzdHJlbmd0aCkgewogICAgZmxvYXQzIGEgPSBwaXhlbCgtMSwgLTEsIHh5KTsKICAgIGZsb2F0MyBiID0gcGl4ZWwoIDAsIC0xLCB4eSk7CiAgICBmbG9hdDMgYyA9IHBpeGVsKCAxLCAtMSwgeHkpOwoKICAgIGZsb2F0MyBkID0gcGl4ZWwoLTEsIDAsIHh5KTsKICAgIGZsb2F0MyBlID0gcGl4ZWwoIDAsIDAsIHh5KTsKICAgIGZsb2F0MyBmID0gcGl4ZWwoIDEsIDAsIHh5KTsKCiAgICBmbG9hdDMgZyA9IHBpeGVsKC0xLCAxLCB4eSk7CiAgICBmbG9hdDMgaCA9IHBpeGVsKCAwLCAxLCB4eSk7CiAgICBmbG9hdDMgaSA9IHBpeGVsKCAxLCAxLCB4eSk7CgogICAgZmxvYXQgbW5SID0gbWluMyhtaW4zKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBtbkcgPSBtaW4zKG1pbjMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG1uQiA9IG1pbjMobWluMyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG1uUjIgPSBtaW4zKG1pbjMobW5SLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG1uRzIgPSBtaW4zKG1pbjMobW5HLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG1uQjIgPSBtaW4zKG1pbjMobW5CLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBtblIgPSBtblIgKyBtblIyOwogICAgbW5HID0gbW5HICsgbW5HMjsKICAgIG1uQiA9IG1uQiArIG1uQjI7CgogICAgZmxvYXQgbXhSID0gbWF4MyhtYXgzKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBteEcgPSBtYXgzKG1heDMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG14QiA9IG1heDMobWF4MyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG14UjIgPSBtYXgzKG1heDMobXhSLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG14RzIgPSBtYXgzKG1heDMobXhHLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG14QjIgPSBtYXgzKG1heDMobXhCLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBteFIgPSBteFIgKyBteFIyOwogICAgbXhHID0gbXhHICsgbXhHMjsKICAgIG14QiA9IG14QiArIG14QjI7CgogICAgZmxvYXQgcmNwTVIgPSByY3AobXhSKTsKICAgIGZsb2F0IHJjcE1HID0gcmNwKG14Ryk7CiAgICBmbG9hdCByY3BNQiA9IHJjcChteEIpOwoKICAgIGZsb2F0IGFtcFIgPSBzYXR1cmF0ZShtaW4obW5SLCAyIC0gbXhSKSAqIHJjcE1SKTsKICAgIGZsb2F0IGFtcEcgPSBzYXR1cmF0ZShtaW4obW5HLCAyIC0gbXhHKSAqIHJjcE1HKTsKICAgIGZsb2F0IGFtcEIgPSBzYXR1cmF0ZShtaW4obW5CLCAyIC0gbXhCKSAqIHJjcE1CKTsKCiAgICBhbXBSID0gc3FydChhbXBSKTsKICAgIGFtcEcgPSBzcXJ0KGFtcEcpOwogICAgYW1wQiA9IHNxcnQoYW1wQik7CgogICAgZmxvYXQgcGVhayA9IC1yY3AobWl4KDgsIDUsIHN0cmVuZ3RoKSk7CgogICAgZmxvYXQgd1IgPSBhbXBSICogcGVhazsKICAgIGZsb2F0IHdHID0gYW1wRyAqIHBlYWs7CiAgICBmbG9hdCB3QiA9IGFtcEIgKiBwZWFrOwoKICAgIGZsb2F0IHJjcFdlaWdodFIgPSByY3AoMSArIDQgKiB3Uik7CiAgICBmbG9hdCByY3BXZWlnaHRHID0gcmNwKDEgKyA0ICogd0cpOwogICAgZmxvYXQgcmNwV2VpZ2h0QiA9IHJjcCgxICsgNCAqIHdCKTsKCiAgICByZXR1cm4gZmxvYXQzKAogICAgICAgIHNhdHVyYXRlKChiLnIgKiB3UiArIGQuciAqIHdSICsgZi5yICogd1IgKyBoLnIgKiB3UiArIGUucikgKiByY3BXZWlnaHRSKSwKICAgICAgICBzYXR1cmF0ZSgoYi5nICogd0cgKyBkLmcgKiB3RyArIGYuZyAqIHdHICsgaC5nICogd0cgKyBlLmcpICogcmNwV2VpZ2h0RyksCiAgICAgICAgc2F0dXJhdGUoKGIuYiAqIHdCICsgZC5iICogd0IgKyBmLmIgKiB3QiArIGguYiAqIHdCICsgZS5iKSAqIHJjcFdlaWdodEIpKTsKfQoKCmZsb2F0NCBtYWluKGZsb2F0MiB4eSkgewoKICAgIGZsb2F0NCBvcmlnaW5hbENvbG9yID0gaUNodW5rLmV2YWwoeHkpOwogICAgaWYgKG9yaWdpbmFsQ29sb3IuYSA8IDEpIHsKICAgICAgICByZXR1cm4gaUNodW5rLmV2YWwoeHkpOwogICAgfQoKICAgIGZsb2F0IGludGVuc2l0eSA9IGlBcmdzWzBdOwogICAgZmxvYXQgc3RyZW5ndGggPSAwOwogICAgZmxvYXQzIGNvbG9yOwoKICAgIGlmIChpbnRlbnNpdHkgPCBWX01JTiArIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMC4xMDsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfTE9XIC0gRVBTSU9OICYmIGludGVuc2l0eSA8IFZfTE9XICsgRVBTSU9OKSB7CiAgICAgICAgc3RyZW5ndGggPSAwLjMzOwogICAgICAgIGNvbG9yID0gUkdYMyh4eSwgc3RyZW5ndGgpOwoKICAgIH0gZWxzZSBpZiAoaW50ZW5zaXR5ID4gVl9NRUQgLSBFUFNJT04gJiYgaW50ZW5zaXR5IDwgVl9NRUQgKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuNTsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfSElHSCAtIEVQU0lPTiAmJiBpbnRlbnNpdHkgPCBWX0hJR0ggKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuOTk7CiAgICAgICAgY29sb3IgPSBSR1gzKHh5LCBzdHJlbmd0aCk7CgogICAgfSBlbHNlIGlmIChpbnRlbnNpdHkgPiBWX01BWCAtIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMTsKICAgICAgICBjb2xvciA9IFJHWDIoeHkpLnJnYjsKICAgIH0KCiAgICByZXR1cm4gZmxvYXQ0KGNvbG9yLCBvcmlnaW5hbENvbG9yLmEpOwp9) -opera-args(0.50 calc(env(-opera-gx-accent-color-r)/255) calc(env(-opera-gx-accent-color-g)/255) calc(env(-opera-gx-accent-color-b)/255)));
+  }
+</style>
+    <link rel="stylesheet" media="(max-width: 1279px)" href="css/mobile.css">
+    <link rel="stylesheet" href="css/manage.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+<style type="text/css"></style></head>
+<body>
+    <div b-5wb0rduifx="" class="content">
+        <div b-5wb0rduifx="" class="header-content">
+            <div b-5wb0rduifx="" class="header">
+                <div b-5wb0rduifx="" class="ColibriLogo">
+                    <a b-5wb0rduifx="" href="/">
+                        <img b-5wb0rduifx="" src="images/logo-min.png" alt="Colibri Group" class="desk">
+                        <img b-5wb0rduifx="" src="images/logo-light.png" alt="Colibri Group" class="mob">
+                    </a>
+                    <div b-5wb0rduifx="" class="menu" id="menu">
+                        <svg b-5wb0rduifx="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path b-5wb0rduifx="" fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+                    </div>
+                </div>
+                <div b-5wb0rduifx="" class="nav" id="nav">
+                    <a b-5wb0rduifx="" href="/#services" class="a-menu" id="aServices">Services</a>
+                    <a b-5wb0rduifx="" href="/#clients" class="a-menu" id="aClients">Partners</a>
+                    <a b-5wb0rduifx="" href="/#projects" class="a-menu" id="aProjects">Projects</a>
+                    <a b-5wb0rduifx="" href="/#reviews" class="a-menu" id="aReviews">Reviews</a>
+                    <a b-5wb0rduifx="" href="/#contact" class="a-menu" id="aContact">Contact Us</a>
+                </div>
+
+            </div>
+        </div>
+        <div b-5wb0rduifx="" class="main-content">
+            
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+
+    <div class="main-top">
+        <video autoplay="" muted="" loop="" class="video-blob" alt="liquid 3d animation transparent">
+            <source type="video/mp4" src="/Images/Header.mp4">
+        </video>
+        <div class="maintitle">
+            <div class="caption">
+                <h1>
+                    International<br>SMM &amp; Marketing <br>Agency
+                </h1>
+            </div>
+        </div>
+    </div>
+
+
+<div class="block-def-2" id="Services">
+<div class="def">
+<div class="title">
+    <h2>Services</h2>
+</div>
+<div class="services">
+<div class="service">
+<div class="item item-sepia">
+    <div class="caption">
+        <h3>
+            Global &amp; Local Events
+            Organization
+        </h3>
+    </div>
+    <div class="desc">
+        <strong class="colibri"><span></span>Colibri Group</strong> organizes turnkey global and local events, including conferences, AMAs, contests, quizzes, etc. We host online events on all popular platforms.
+    </div>
+
+    <div class="logos hide" id="block1_0">
+        <div class="logo">
+            <img src="/Images/logos/youtube.png" alt="YouTube">
+        </div>
+        <div class="logo">
+            <img src="/Images/logos/theta.png" alt="Theta.tv">
+        </div>
+        <div class="logo">
+            <img src="/Images/logos/telegram.png" alt="Telegram">
+        </div>
+        <div class="logo">
+            <img src="/Images/logos/twitter.png" alt="Twitter">
+        </div>
+    </div>
+    <div class="desc hide" id="block1_1">
+        <strong class="colibri"><span></span>Colibri Group</strong> is the organizer of the largest online cryptocurrency summit Synopsis 2021.
+    </div>
+    <div class="logos hide" id="block1_2">
+        <div class="logo-max">
+            <a href="https://synopsis2021.com" target="_blank">
+                <img src="/Images/logos/synopsis.png" alt="Synopsis 2021">
+            </a>
+
+        </div>
+    </div>
+    <div class="desc hide" id="block1_3">
+        The first part of Synopsis featured more than 40 speakers and attracted over 100,000 viewers on YouTube and Theta.tv. More than 600 media outlets wrote about the summit, including Bloomberg, Forbes, MarketWatch, and Yahoo Finance.
+    </div>
+    <div class="disclosure" onclick="show_block(1)">
+        <div class="symb" id="symb1">
+            »
+        </div>
+    </div>
+
+
+</div>
+<div class="item item-blue">
+
+    <div class="caption">
+        <h3>
+            Management of Local Communities
+        </h3>
+    </div>
+    <div class="desc">
+        <div class="text">
+            <strong class="colibri"><span></span>Colibri Group</strong> provides comprehensive community management and community building services from the ground up.
+        </div>
+
+        <div class="list hide" id="block6_0">
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Comprehensive local community management
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Promotion and branding at the local level
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Organization of public meetings and conducting AMAs
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Conducting contests, quizzes, surveys, and other online events
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Detailed progress reports with recommendations, comments, and feedback from the community
+            </div>
+        </div>
+        <div class="text hide" id="block6_1">
+            Ready-made solutions for quality community development and project promotion!
+        </div>
+        <div class="text">
+            Supported countries: Russia, the CIS countries, Germany, Spain, the USA and all English-speaking countries, Korea, China, the Philippines, Vietnam, Sri Lanka, and Indonesia.
+        </div>
+    </div>
+    <div class="disclosure disclosure-black" onclick="show_block(6)">
+        <div class="symb" id="symb6">
+            »
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="caption">
+        <h3>
+            Strategic &amp; Management Consulting
+        </h3>
+    </div>
+    <div class="desc">
+        <div class="text">
+            <strong class="colibri"><span></span>Colibri Group</strong> has been advising blockchain projects, cryptocurrency exchanges, and trading communities since 2018. <span id="block2_0" class="hide">Our experts are ready to be your consultants in the following:</span>
+        </div>
+        <div class="list hide" id="block2_1">
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Marketing and promotion
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Global and local brand positioning
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Interaction with communities
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Product-related issues
+            </div>
+        </div>
+    </div>
+    <div class="disclosure" onclick="show_block(2)">
+        <div class="symb" id="symb2">
+            »
+        </div>
+    </div>
+</div>
+
+
+<div class="item item-green">
+    <div class="caption">
+        <h3>
+            Integration &amp; Partner Engagement
+        </h3>
+    </div>
+    <div class="desc">
+        <div class="text">
+            <strong class="colibri"><span></span>Colibri Group</strong> is a member of various lobbying groups, the Commission on Blockchain and Digital Economy, and the all-Russian public organization Investment Russia. It cooperates with various international legal partners and regularly holds public online summits involving industry experts and government representatives.
+        </div>
+        <div class="text">
+            Take advantage of ample opportunities for maximum expansion in the markets of Russia, South Korea, China, and the USA.
+        </div>
+    </div>
+</div>
+
+<div class="item">
+    <div class="caption">
+        <h3>
+            Auditing and In-depth Services for Blockchain Projects
+        </h3>
+    </div>
+    <div class="desc">
+        <div class="text">
+            <strong class="colibri"><span></span>Colibri Group</strong> employs high-level professionals with established connections and knowledge of all aspects of procedures and business processes. <span id="block4_0" class="hide">We are ready to accompany you at all stages of the following services:</span>
+        </div>
+        <div class="list hide" id="block4_1">
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Blockchain project auditing
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Listing services
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Credit rating assessment
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Preparation of related documentation
+            </div>
+        </div>
+        <div class="text hide" id="block4_2">
+            <strong class="colibri"><span></span>Colibri Group</strong> is all blockchain consulting services in one place.
+        </div>
+    </div>
+
+    <div class="disclosure" onclick="show_block(4)">
+        <div class="symb" id="symb4">
+            »
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="service">
+<div class="item">
+    <div class="caption">
+        <h3>
+            Auditing &amp; Optimization of Community Management Systems
+        </h3>
+    </div>
+    <div class="desc">
+        <div class="text">
+            <strong class="colibri"><span></span>Colibri Group</strong> provides comprehensive community management services to dozens of international cryptocurrency companies and blockchain projects. We are setting new quality standards by offering the best user experience and maximum user immersion in the product.
+        </div>
+        <div class="list hide" id="block5_0">
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Auditing of community management systems
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Development and optimization of quality standards for community management
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Automation of a number of community management processes
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Bot development and customization
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Organization of local and international events
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Work with partners and media partners
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Involvement of influencers and media partners
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Turnkey community management
+            </div>
+        </div>
+    </div>
+
+    <div class="disclosure disclosure-white" onclick="show_block(5)">
+        <div class="symb" id="symb5">
+            »
+        </div>
+    </div>
+</div>
+<div class="item item-purple-light">
+
+    <div class="caption">
+        <h3>
+            NFT Creation &amp; Promotion
+        </h3>
+    </div>
+    <div class="desc">
+        <div class="text">
+            <strong>Colibri Group</strong> helps artists, designers, celebrities create and promote NFTs on popular marketplaces. You can focus on your creativity, and we take care of all the technical and marketing issues.
+        </div>
+        <div class="text">
+            <strong>Colibri Group</strong> has successfully sold two NFT Drops on the Theta Drops platform. Both NFT Drops sold out in less than 2 minutes. <strong>The total cost of sales was $120,000</strong>.
+        </div>
+        <div class="images">
+            <a href="https://synopsis.thetadrop.com/" target="_blank" class="image" style="background-image:url(/Images/projects/synopsis_drop.jpg)">
+            </a>
+            <a href="https://synopsis.thetadrop.com/" target="_blank" class="image" style="background-image:url(/Images/projects/synopsis_drop2.jpg)">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="item item-gray">
+    <div class="caption">
+        <h3>
+            Interaction with the Media &amp; Influencers
+        </h3>
+    </div>
+    <div class="desc">
+        <div class="text">
+            <strong class="colibri"><span></span>Colibri Group</strong> is a developer of popular products for the global cryptocurrency community with over 500,000 visits per month. Some services have been in stable operation for more than 3 years, are the best in the field, and have earned recognition from the global community. Our experts communicate with opinion leaders, mainstream media, popular bloggers, owners of well-known crypto companies, and blockchain industry stars daily.
+        </div>
+        <div class="text hide" id="block3_0">
+            Proven interaction &amp; communication models:
+        </div>
+        <div class="list hide" id="block3_1">
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Our own world-renowned resources with a large community
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>A global database of media partners, bloggers, and influencers
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Strategic partnerships with analytics leaders such as Xangle, IntoTheBlock, etc.
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Development of custom marketing campaigns with industry-leading media outlets
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Effective promotion models
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>An extensive database of news resources for press release distribution, including Bloomberg, MarketWatch, Yahoo Finance, Asahi, etc.
+            </div>
+        </div>
+    </div>
+    <div class="disclosure" onclick="show_block(3)">
+        <div class="symb" id="symb3">
+            »
+        </div>
+    </div>
+</div>
+<div class="item item-blue">
+
+    <div class="caption">
+        <h3>
+            Content Creation &amp; Promotion
+        </h3>
+    </div>
+    <div class="desc">
+        <div class="text">
+            <strong class="colibri"><span></span>Colibri Group</strong> will be happy to invite you to various shows, conferences, forums, video interviews, podcasts, and other events. Get quality content and promotion from professionals.
+        </div>
+        <div class="text">
+            We set the stage for project news, organize the whole process, and put everything together into great content.
+
+        </div>
+    </div>
+</div>
+
+<div class="item item-sepia">
+    <div class="caption">
+        <h3>
+            News &amp; Events Distribution for Blockchain Projects
+        </h3>
+    </div>
+    <div class="desc">
+        <div class="text">
+            <strong class="colibri"><span></span>Colibri Group</strong> provides event and press release distribution services on financial, business, and trading media.
+        </div>
+        <div class="list hide" id="block7_0">
+
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>An extensive database of press release distribution resources in English, including Bloomberg, MarketWatch, Yahoo Finance, Asahi, etc.
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Press release distribution in China, including the top media outlets, such as China.com, Sohu, Sina, Toutiao, China Daily, Phoenix, and NetEase
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Press release distribution in Russian media, including bloggers, influencers, and themed Telegram channels in Russia and the CIS
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Press release distribution in leading blockchain and crypto media outlets worldwide
+            </div>
+            <div class="elem">
+                <span class="check">
+                    <span class="inner"></span>
+                </span>Assistance in press release preparation and distribution organization
+            </div>
+        </div>
+    </div>
+
+    <div class="disclosure" onclick="show_block(7)">
+        <div class="symb" id="symb7">
+            »
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+    <div class="block-def" id="Clients">
+        <div class="def">
+            <div class="title">
+                <h2 class="threeh2">Partners</h2>
+            </div>
+            <div class="partners">
+                
+        <a class="partneritem" href="https://arpachain.io/" target="_blank">
+            <img src="/images/partners/NPU1XMFqY6bZoI1GBSwzUAmj8.png" alt="ARPA">
+        </a>
+        <a class="partneritem" href="https://bella.fi/" target="_blank">
+            <img src="/images/partners/pwlZ0jxfoIdObObxu6GIwh57M.png" alt="Bella">
+        </a>
+        <a class="partneritem" href="https://www.thetatoken.org/" target="_blank">
+            <img src="/images/partners/2B5gQMG85roncQd1h4Y4g5yBu.png" alt="THETA Network">
+        </a>
+        <a class="partneritem" href="https://www.theta.tv/" target="_blank">
+            <img src="/images/partners/O22ZVSWuiImZmjuSkqbrYIS0k.png" alt="THETA tv">
+        </a>
+        <a class="partneritem" href="https://synopsis.thetadrop.com/" target="_blank">
+            <img src="/images/partners/fphvYAgTnVwy66ZGNGiZKyrsT.png" alt="Theta Drop">
+        </a>
+        <a class="partneritem" href="https://delio.io/?locale=en_US" target="_blank">
+            <img src="/images/partners/uNif8x1QNBqZkBANgzFYjMF7n.png" alt="Delio">
+        </a>
+        <a class="partneritem" href="https://www.verasity.io/" target="_blank">
+            <img src="/images/partners/p5puSzfEDgwa5HtMHG52YDjIx.png" alt="Verasity">
+        </a>
+        <a class="partneritem" href="https://gather.network/" target="_blank">
+            <img src="/images/partners/Cu22LWB5RRwQaVVvRyOhy4EYR.png" alt="Gather Network">
+        </a>
+        <a class="partneritem" href="https://mahadao.com/" target="_blank">
+            <img src="/images/partners/XpoKLKfNdVqvOZBoizQmePr76.png" alt="MahaDAO">
+        </a>
+        <a class="partneritem" href="https://www.algorand.com/" target="_blank">
+            <img src="/images/partners/m5CtTQEee2KgjcAFtzsgb04T6.png" alt="Algorand">
+        </a>
+        <a class="partneritem" href="https://bingx.com/" target="_blank">
+            <img src="/images/partners/waDldHebD1Z3KP8XLENLlD8it.png" alt="BingX">
+        </a>
+        <a class="partneritem" href="https://solv.finance" target="_blank">
+            <img src="/images/partners/Lmxb5nz873GNe6Oi1uAEOW8Js.png" alt="SOLV Protocol">
+        </a>
+        <a class="partneritem" href="https://everscale.network/" target="_blank">
+            <img src="/images/partners/Bb7PVTGKhtZfP1YecBGXFPedX.png" alt="Everscale">
+        </a>
+        <a class="partneritem" href="https://woo.org/" target="_blank">
+            <img src="/images/partners/XZRd8UhbaGRtF8DElS6j1uZ8y.png" alt="Woo Network">
+        </a>
+        <a class="partneritem" href="https://beincrypto.com/" target="_blank">
+            <img src="/images/partners/eVy3yuef4QFaKR2FTEMB0rufX.png" alt="Beincrypto">
+        </a>
+        <a class="partneritem" href="https://www.aergo.io/" target="_blank">
+            <img src="/images/partners/d2mixjg43LNFGiYgLOqU6KPPv.png" alt="AERGO">
+        </a>
+        <a class="partneritem" href="https://gate.io" target="_blank">
+            <img src="/images/partners/bposzMMuS3FlWNcpz6aQN6f10.png" alt="Gate.io">
+        </a>
+        <a class="partneritem" href="https://www.okx.com" target="_blank">
+            <img src="/images/partners/KZEVxx4efzDOEITTSeitkuqTn.png" alt="OKX">
+        </a>
+        <a class="partneritem" href="https://aave.com/" target="_blank">
+            <img src="/images/partners/i5D5FPqkqMU2YgRXjGc6FZSxk.png" alt="AAVE">
+        </a>
+        <a class="partneritem" href="https://www.fairdesk.com/" target="_blank">
+            <img src="/images/partners/ztcHaF3whfjVAZ5nIul5sbRrE.png" alt="Fairdesk">
+        </a>
+        <a class="partneritem" href="https://nupaytechnologies.com/" target="_blank">
+            <img src="/images/partners/LSIJK6hCydCoiikUWIYiY1fkd.png" alt="NuPay">
+        </a>
+        <a class="partneritem" href="https://scaleswap.io/" target="_blank">
+            <img src="/images/partners/JDczoxaKNs1q2NgYDKlifYH5s.png" alt="Scaleswap">
+        </a>
+        <a class="partneritem" href="x" target="_blank">
+            <img src="/images/partners/IwBkeWMcLBCGWoP0TyElnnb2H.png" alt="ASTAR">
+        </a>
+        <a class="partneritem" href="https://www.2key.network/" target="_blank">
+            <img src="/images/partners/831pbXQ0nBBEeVGqrJCJq2Wu7.png" alt="2Key">
+        </a>
+        <a class="partneritem" href="https://mobifi.io/" target="_blank">
+            <img src="/images/partners/qoNMrkqreM3TpQqKtgI2m3VU7.png" alt="MobiFi">
+        </a>
+        <a class="partneritem" href="https://arthcoin.com" target="_blank">
+            <img src="/images/partners/pbYwWUHYAtKoxTvNEQloRmiFV.932b365c (1).png" alt="Arthcoin">
+        </a>
+        <a class="partneritem" href="http://blockodyssey.io/eng" target="_blank">
+            <img src="/images/partners/3Ma1l4VsetVSZK8PWKWaf4qIY.png" alt="Block Odyssey">
+        </a>
+        <a class="partneritem" href="https://trustbase.network/" target="_blank">
+            <img src="/images/partners/5e8BrKZsKS778cszvpC08xAnU.png" alt="Trust Base">
+        </a>
+        <a class="partneritem" href="https://www.cocosbcx.io/" target="_blank">
+            <img src="/images/partners/SQdbxTmR4rI4ZhRcpTUqBgBuV.png" alt="COCOS-BCX">
+        </a>
+        <a class="partneritem" href="https://confluxnetwork.org/" target="_blank">
+            <img src="/images/partners/bTEA3mnrxHJKUqJOB6WouxeYs.png" alt="Conflux">
+        </a>
+        <a class="partneritem" href="https://www.hotbit.pro/" target="_blank">
+            <img src="/images/partners/8XYaKGpGhNQExcewNthXkOfkE.png" alt="Hotbit">
+        </a>
+        <a class="partneritem" href="https://elysia.land/" target="_blank">
+            <img src="/images/partners/AcsZJp4H4OxOok3PpIFbqZXrX.png" alt="Elysia">
+        </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="block-def" id="Projects">
+        <div class="def">
+            <div class="title">
+                <h2 class="threeh2">Our Projects</h2>
+            </div>
+            <div class="partners">
+
+                <a class="partneritem" href="https://synopsis2021.com" target="_blank">
+                    <img src="/images/projects/synopsis.png" alt="Synopsis">
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+<style>
+
+.swiper-slide .message {
+      transform: scale(0.96); 
+      margin-top: 20px;
+      transition: transform .2s ease;
+  }
+  .swiper-slide-active .message {
+        transform: scale(1.05);
+        transition: transform .2s ease;
+        margin-left: 5px;
+        margin-right: 10px!important;
+    }
+    .swiper-slide-active .message .author .name{
+    transform: scale(1);
+    }
+</style>
+
+<div class="block-def-2" id="Reviews">
+    <div class="def">
+        <div class="title">
+            <h2>Reviews</h2>
+        </div>
+        <div class="reviews-carousel">
+            <div class="reviews">
+                <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                    <div class="swiper-wrapper" id="swiper-wrapper-47a6a2124bd40ce4" aria-live="polite" style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(-796.667px, 0px, 0px);"><div class="swiper-slide" role="group" aria-label="7 / 9" data-swiper-slide-index="6" style="width: 383.333px; margin-right: 15px;">
+                                        <div class="message">
+                                            <div class="reviewstext text-white">It is an absolute pleasure to work with the Colibri Group! The spectacular service team provided ARPA &amp; Bella Protocol with undeniably one of the best services possible out there. We delivered a strong impact on the Eastern European crypto community thanks to them helping us reach out to potential partners, pairing our marketing materials with suitable channels, and fostering our user loyalty with sturdy relationship-building abilities. We will continue turning to Colibri Group for growth marketing services going forward.</div>
+                                            <div class="author">
+                                                <div class="name">
+                                                    <span>
+                                                        Yemu Xu
+                                                    </span>
+                                                    <br>
+                                                    Co-Founder &amp; Chief Growth Officer, ARPA &amp; Bella Protocol
+                                                </div>
+                                                <div class="photo" style="background-image:url('/images/reviews/Yemu.png')"></div>
+                                            </div>
+                                        </div>
+                                    </div><div class="swiper-slide" role="group" aria-label="8 / 9" data-swiper-slide-index="7" style="width: 383.333px; margin-right: 15px;">
+                                        <div class="message">
+                                            <div class="reviewstext text-white">Working with the Colibri Group team was an absolute pleasure. They supported us with networking, marketing, and biz dev support we didn't know we needed. The flexibility and professionalism is what the blockchain space needs to move forward. The summit brought our project great attention along with some new devout community members!</div>
+                                            <div class="author">
+                                                <div class="name">
+                                                    <span>
+                                                        Anthony Blackburn
+                                                    </span>
+                                                    <br>
+                                                    Partnership Manager at Sui Foundation
+                                                </div>
+                                                <div class="photo" style="background-image:url('/images/reviews/Antony.png')"></div>
+                                            </div>
+                                        </div>
+                                    </div><div class="swiper-slide swiper-slide-prev" role="group" aria-label="9 / 9" data-swiper-slide-index="8" style="width: 383.333px; margin-right: 15px;">
+                                        <div class="message">
+                                            <div class="reviewstext text-white">   We've worked with Synopsis on many conferences now, both as a streaming partner and conference speaker. Synopsis events consistently draw a great roster of speakers and attendees, covering a wide variety of crypto projects and sectors. They've also been a real innovator in using NFTs as conference tickets and rewards, including using Theta NFTs and our ThetaPass tech to provide exclusive access to video streams. We look forward to continued collaboration with Synopsis events!</div>
+                                            <div class="author">
+                                                <div class="name">
+                                                    <span>
+                                                        Wes Levitt
+                                                    </span>
+                                                    <br>
+                                                    Head Of Strategy at Theta Labs, Inc
+
+                                                </div>
+                                                <div class="photo" style="background-image:url('/images/reviews/Wes.png')"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 9" data-swiper-slide-index="0" style="width: 383.333px; margin-right: 15px;">
+                                        <div class="message">
+                                            <div class="reviewstext text-white">We’ve had a wonderful experience working with the Colibri Group, and they’ve always been there to support ARPA &amp; Bella Protocol when we needed it. They played an important role in helping us build and maintain our Eastern European community, grow our local influence in Eastern European area, and bring in exciting partnership opportunities within their resourceful crypto &amp; blockchain network. We are more than happy with their service and will continue working with Colibri Group!</div>
+                                            <div class="author">
+                                                <div class="name">
+                                                    <span>
+                                                        Felix Xu
+                                                    </span>
+                                                    <br>
+                                                    Co-Founder &amp; Chief Executive Officer, ARPA &amp; Bella Protocol
+                                                </div>
+                                                <div class="photo" style="background-image:url('/images/reviews/Felix.png')"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 9" data-swiper-slide-index="1" style="width: 383.333px; margin-right: 15px;">
+                                        <div class="message">
+                                            <div class="reviewstext text-green">We took part in the conference for the first time and were invited as co-organizers. It was a great honor for us to participate in the creation of such a large-scale event with our partners. We believe that Synopsis will help create a common space for communication between projects and create synergies for further cooperation.</div>
+                                            <div class="author">
+                                                <div class="name">
+                                                    <span>
+                                                        Lihan Hyunwoo Lee
+                                                    </span>
+                                                    <br>
+                                                    CEO at Xangle
+                                                </div>
+                                                <div class="photo" style="background-image:url('/images/reviews/lihan.png')"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" role="group" aria-label="3 / 9" data-swiper-slide-index="2" style="width: 383.333px; margin-right: 15px;">
+                                        <div class="message">
+                                            <div class="reviewstext text-white">The entire Colibri Group team consists of professionals who can easily find a way out of any situation, will be able to adjust and help with both technical and substantive problems. The guys organize some of the best events on the blockchain and cryptocurrency market, where the quality of speakers and heated discussions is not inferior to a beautiful and fashionable design.</div>
+                                            <div class="author">
+                                                <div class="name">
+                                                    <span>
+                                                        Maria Stankevich
+                                                    </span>
+                                                    <br>
+                                                    Director, Institutional Business at OKX
+                                                </div>
+                                                <div class="photo" style="background-image:url('/images/reviews/maria.png')"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" role="group" aria-label="4 / 9" data-swiper-slide-index="3" style="width: 383.333px; margin-right: 15px;">
+                                        <div class="message">
+                                            <div class="reviewstext text-white">We’ve been working with Coindar &amp; Colibri Group for some time now, they’re always there to support us in many forms, introducing us to new partners, helping us to expand our network &amp; being our eyes and ears in the Russian market, managing our big community over there. It’s always a pleasure to be a part of their full of potential industry events such as Synopsis &amp; DeFi Global Summit, we’re stronger together with our great partner network.</div>
+                                            <div class="author">
+                                                <div class="name">
+                                                    <span>
+                                                        Ayhan Gungor
+                                                    </span>
+                                                    <br>
+                                                    CMO at Gather Network
+                                                </div>
+                                                <div class="photo" style="background-image:url('/images/reviews/Ayhan.png')"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" role="group" aria-label="5 / 9" data-swiper-slide-index="4" style="width: 383.333px; margin-right: 15px;">
+                                        <div class="message">
+                                            <div class="reviewstext text-white">We are delighted to be working with Colibri Group and amazed by the confidence and professionalism displayed by all members of the team. We look forward to exploring more opportunities with Colibri in the future.</div>
+                                            <div class="author">
+                                                <div class="name">
+                                                    <span>
+                                                        Yoon Kim
+                                                    </span>
+                                                    <br>
+                                                    CEO &amp; Founder ELYSIA
+                                                </div>
+                                                <div class="photo" style="background-image:url('/images/reviews/Yoon.png')"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" role="group" aria-label="6 / 9" data-swiper-slide-index="5" style="width: 383.333px; margin-right: 15px;">
+                                        <div class="message">
+                                            <div class="reviewstext none">I have always been impressed by the energetic and collaborative partnership with Colibri Group. Their master-level product&amp;service always accurately highlights the uniqueness of a blockchain and adds value to it with their fantastic creations. Their devotion and enthusiasm always draw their partners closer to a common goal, nice and neat. To those who have not worked with Colibri Group yet, I'd say that you'd definitely enjoy your partnership with this group of elites and it is never too late.</div>
+                                            <div class="author">
+                                                <div class="name">
+                                                    <span>
+                                                        Enzo Wang
+                                                    </span>
+                                                    <br>
+                                                    Co-founder of HeartBit
+                                                </div>
+                                                <div class="photo" style="background-image:url('/images/reviews/Enzo.png')"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                    </div>
+                    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-47a6a2124bd40ce4"></div>
+                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-47a6a2124bd40ce4"></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                <div class="block-def" id="Contact">
+    <div class="def">
+        <div class="title title-2">
+            <h2 class="threeh2">Contact Us</h2>
+        </div>
+        <div class="contacts">
+            <a href="mailto:info@colibri-group.org" class="logo-contact contactmargin   ">
+                <div class="svgcontacts mailsvg">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16 svgcontacts" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+                    </svg>
+                </div>
+                <div class="contact">
+                    info@colibri-group.org
+                </div>
+            </a>
+            
+            <a href="https://t.me/Nik_Mac" class="logo-contact contactmargin">
+                <div class="svgcontacts telegramsvg">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram" class="svg-inline--fa fa-telegram fa-w-16 svgcontacts" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path>
+                    </svg>
+                </div>
+                <div class="contact">
+                    @TheDartum
+                </div>
+            </a>
+
+            <a href="" class="logo-contact contactmargin">
+                <div class="svgcontacts telegramsvg">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram" class="svg-inline--fa fa-telegram fa-w-16 svgcontacts" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path>
+                    </svg>
+                </div>
+                <div class="contact">
+                    @Nik_Mac
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+        <div b-5wb0rduifx="" class="last-cont" id="lastCont"></div>
+    </div>
+
+    <div b-5wb0rduifx="" class="bottom-cont">
+        <div b-5wb0rduifx="" class="endcopy">
+
+            <svg b-5wb0rduifx="" version="1.0" xmlns="http://www.w3.org/2000/svg" width="331.000000pt" height="277.000000pt" viewBox="0 0 331.000000 277.000000" preserveAspectRatio="xMidYMid meet">
+                <defs b-5wb0rduifx="">
+                    <linearGradient b-5wb0rduifx="" id="logo-gradient" x1="50%" y1="0%" x2="50%" y2="100%">
+
+                        <stop b-5wb0rduifx="" offset="0%" stop-color="#7A5FFF">
+                            <animate b-5wb0rduifx="" attributeName="stop-color" values="#7A5FFF; #01FF89; #7A5FFF" dur="4s" repeatCount="indefinite"></animate>
+                        </stop>
+
+                        <stop b-5wb0rduifx="" offset="100%" stop-color="#01FF89">
+                            <animate b-5wb0rduifx="" attributeName="stop-color" values="#01FF89; #7A5FFF; #01FF89" dur="4s" repeatCount="indefinite"></animate>
+                        </stop>
+
+                    </linearGradient>
+
+                </defs>
+                <g b-5wb0rduifx="" transform="translate(0.000000,277.000000) scale(0.100000,-0.100000)" fill="url('#logo-gradient')" stroke="none">
+                    <path b-5wb0rduifx="" d="M1964 2483 c-131 -158 -247 -297 -256 -308 -16 -21 -9 -29 383 -421
+l399 -399 0 708 0 707 -143 0 -144 0 -239 -287z"></path>
+                    <path b-5wb0rduifx="" d="M2755 2757 c-3 -7 -4 -131 -3 -277 l3 -265 278 -3 c174 -1 278 1 275
+7 -4 11 -537 551 -544 551 -3 0 -7 -6 -9 -13z"></path>
+                    <path b-5wb0rduifx="" d="M0 1938 c0 -13 1712 -1728 1724 -1728 14 0 766 753 766 766 0 5 -215
+224 -478 486 l-477 478 -768 2 c-422 2 -767 0 -767 -4z"></path>
+                    <path b-5wb0rduifx="" d="M568 282 c-235 -147 -427 -270 -428 -274 0 -5 313 -8 695 -8 551 0
+695 3 695 13 0 11 -520 538 -530 536 -3 0 -197 -120 -432 -267z"></path>
+                </g>
+            </svg>
+            <div b-5wb0rduifx="" class="colibri">
+                © 2019-2023 Colibri Group
+            </div>
+
+        </div>
+    </div>
+    <script src="lib/jquery/dist/jquery.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+          loop: true,
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 3,
+          spaceBetween: 15,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+        var cur_block = -1;
+        function show_block(id) {
+            for (var i = 1; i <= 7; ++i) {
+                var j = 0;
+                while ($('#block' + i + '_' + j).length) {
+                    $('#block' + i + '_' + j).removeClass('show');
+                    $('#block' + i + '_' + j).addClass('hide');
+                    ++j;
+                }
+            }
+
+            if (cur_block != id) {
+                var j = 0;
+                while ($('#block' + id + '_' + j).length) {
+                    $('#block' + id + '_' + j).addClass('show');
+                    $('#block' + id + '_' + j).removeClass('hide');
+                    ++j;
+                }
+
+                $('#symb' + id).addClass('symb-show');
+                $('#symb' + id).removeClass('symb');
+                cur_block = id;
+            }
+            else {
+                $('#symb' + id).removeClass('symb-show');
+                $('#symb' + id).addClass('symb');
+                cur_block = -1;
+            }
+    
+        }
+
+        $('#aServices').click(function () {
+            $("html, body").delay().animate({ scrollTop: $('#Services').offset().top }, 2000);
+            return false;
+        })
+
+        $('#aClients').click(function () {
+            $("html, body").delay().animate({ scrollTop: $('#Clients').offset().top }, 2000);
+            return false;
+        })
+
+        $('#aProjects').click(function () {
+            $("html, body").delay().animate({ scrollTop: $('#Projects').offset().top }, 2000);
+            return false;
+        })
+
+        $('#aReviews').click(function () {
+            $("html, body").delay().animate({ scrollTop: $('#Reviews').offset().top }, 2000);
+            return false;
+        })
+
+        $('#aContact').click(function () {
+            $("html, body").delay().animate({ scrollTop: $('#Contact').offset().top }, 2000);
+            return false;
+        })
+
+
+
+    </script>
+
+
+
+    <script>
+        var is_nav_show = false;
+        $('#menu').click(function () {
+            if (!is_nav_show) {
+                $('#nav').addClass('show');
+            }
+            else {
+                $('#nav').removeClass('show');
+            }
+            is_nav_show = !is_nav_show;
+        })
+    </script>
+
+
+</body></html>
